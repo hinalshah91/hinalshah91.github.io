@@ -1,0 +1,342 @@
+<!-- <?php
+if(isset($_POST['contactSubmit'])){
+  $message = " ";
+  $fullName = $_POST["fullName"] ;
+  $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+  // if ($email) {
+  //    $headers .= "\r\nReply-To: $email";
+  // }
+  $formMessage = $_POST["message"];
+
+  $message .= "Full Name: " . $fullName . "\n";
+  $message .= "Email Address: " . $email . "\n";
+  $message .= "Message: " . $formMessage . "\n";
+
+  $subject = "Enquiry from your website";
+  $myEmail =" hello@hinalshah.com";
+
+  // $headers .= 'Content-Type: text/plain; charset=utf-8';
+  // $headers = "From: \\"$fullName\\" <$email>\\r\ ";
+  // $headers .= "X-Sender: $email \\r\ ";
+  // $headers .= "X-Priority: 3 \\r\ ";
+  // $headers .= "X-Mailer: php\\r\ ";
+
+  if (mail($myEmail, $subject, $message)){
+    $success = "Thank you! I will get in touch with you soon.";
+  }else{
+    $success = "Message Sending Failed, try again.";
+  }
+}
+?> -->
+<!Doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hinal Shah | Front End Developer</title>
+    <meta name="keywords" content="website, website designer, website developer, user interface developer, user interface designer, ui developer, ui designer, front end developer, front end web developer, web developer, developer, freelancer, ui, responsive, cross-browser compatible, wordpress, bootstrap, zurb foundation, photoshop, html5, css3, jquery, javascript, front end">
+    <meta name="description" content="I'm a Website developer / User interface developer and Front end developer living in Mumbai, India. I am specialised in building Responsive and cross-browser compatible Websites.">
+    <meta property="og:image" content="http://hinalshah.com/img/bg_cover.jpg" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/jquery.slick.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#"><img class="show-for-small-only" src="img/logo.png" alt="Hinal Shah logo"/></a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon">
+          <a href="#">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+          </a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right social_icons">
+          <li><a href="https://in.linkedin.com/pub/hinal-shah/56/635/159" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/hinal.shah.739" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/HinalShah7" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com/shah_hinal/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://plus.google.com/+HinalShah27" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://in.pinterest.com/shinal94/" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+        <!-- Left Nav Section -->
+        <ul class="left" id="menu">
+          <li class="active" data-menuanchor="introduction"><a href="#introduction">Introduction</a></li>
+          <li data-menuanchor="about"><a href="#about">About</a></li>
+          <li data-menuanchor="work"><a href="#work">Work</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <section class="" id="myContainer">
+
+      <div class="small-12 columns no_pad">
+        <!-- introduction -->
+        <div class="section text-center" id="section0">
+          <h1 class="head_name">
+            <svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <text class="path" xml:space="preserve" text-anchor="middle" font-family="'Open Sans', sans-serif; " font-style="italic;" id="svg_1" y="80%" x="50%" stroke-width="2" stroke="#000" fill="#000">Hinal Shah</text>
+            </svg>
+          </h1>
+          <div  class="job_profile">
+            <h4>Front End Developer<span class="dot">.</span></h4>
+          </div>
+        </div>
+
+        <!-- /introduction -->
+    <!-- about -->
+        <div class="section row" id="section1">
+          <div class="small-12 columns no_pad_mobile">
+            <h2 class="section_heading">About Me<span class="dot">.</span></h2>
+            <p>Hi! I am a Front End developer living in Mumbai, India specialized in building responsive and cross-browser compatible websites. Currently working in People Interactive Pvt. Ltd. as a Software Developer - Web UI. I have worked as an Associate Product Executive at Inscripts India Pvt. ltd. and as a Front End Developer at B2 information Systems Pvt. ltd.. You can find my resume <a href="Resume-Hinal-Shah.pdf" class="grey_link" title="Hinal Shah Resume">here</a>.</p>
+            <div class="skills">
+              <div class="skill_row row">
+                <div class="medium-12 columns">
+                  <h6 class="sub_head">Web Languages</h6>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite html"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite css"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite js"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite jquery"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill_row row">
+                <div class="medium-12 columns">
+                  <h6 class="sub_head">Web Technologies</h6>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite sass"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite less"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite rwd"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill_row row">
+                <div class="medium-12 columns">
+                  <h6 class="sub_head">Front-End Frameworks</h6>
+                  <div class="text-center skill_set">
+                    <div class="skill_name">Twitter Bootstrap</div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="skill_name">Zurb Foundation</div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="skill_name">Angular js</div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="skill_name">React js</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill_row row">
+                <div class="medium-12 columns">
+                  <h6 class="sub_head">Content Management System and Tools</h6>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite wordpress"></div>
+                  </div>
+                  <div class="text-center skill_set">
+                    <div class="ico_sprite photoshop"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    <!-- /about -->
+    <!-- work -->
+        <div class="section row" id="section2">
+          <h2 class="section_heading">Work<span class="dot">.</span></h2>
+          <p>An exhibition of my projects.</p>
+          <div class="project_section">
+            <div class="project">
+              <a href="http://city.groupon.co.in/">
+                <img src="img/groupon.png" alt="Groupon"/>
+                <h2 class="project_title">Groupon</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://traveltriangle.com/">
+                <img src="img/travel_triangle.png" alt="Travel Triangle"/>
+                <h2 class="project_title">Travel Triangle <span>(mobile site)</span></h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://ashapuraagroup.com/">
+                <img src="img/ashapuragroup.png" alt="Ashapura Group"/>
+                <h2 class="project_title">Ashapura Group</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://www.findit.com.my/">
+                <img src="img/findit.png" alt="Findit Malaysia"/>
+                <h2 class="project_title">Findit Malaysia</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="https://www.cometchat.com/">
+                <img src="img/cometchat.png" alt="CometChat"/>
+                <h2 class="project_title">CometChat</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://www.zenopinion.com/">
+                <img src="img/zenopinion.png" alt="ZenOpinion"/>
+                <h2 class="project_title">ZenOpinion</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://pusheo.com/">
+                <img src="img/pusheo.png" alt="Pusheo"/>
+                <h2 class="project_title">Pusheo</h2>
+              </a>
+            </div>
+            <div class="project">
+              <a href="http://sellmojo.com/yir">
+                <img src="img/sellmojo.png" alt="SellMojo - A Year in Review"/>
+                <h2 class="project_title">SellMojo - A Year in Review</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- /work -->
+    <!-- contact -->
+        <div class="section contact" id="section3">
+          <div class="row">
+            <h2 class="section_heading">Get in touch<span class="dot">.</span></h2>
+            <p>Lets work together.</p>
+            <!-- <div class="medium-5 columns no_pad_mobile">
+              <h6>You can simply drop me a message.</h6>
+              <form method="post" action="" id="contactForm">
+                <input type="text" name="fullName" placeholder="Your full name" id="fullName" required/>
+                <input type="email" name="email" placeholder="Your email address" id="email" required>
+                <textarea class="textarea" name="message" id="message" placeholder="Your message here.."></textarea>
+                <button type="submit" name="contactSubmit" class="right full_width btn" id="contactSubmit">Shoot
+                  <i class="fa fa-paper-plane"></i>
+                </button>
+              </form>
+              <div id="simple-msg">
+                <?php
+                if (isset($success)){
+                  echo $success;
+                }
+                ?>
+              </div>
+            </div> -->
+            <div class="medium-12 columns no_pad_mobile">
+              <div class="mtop_15">
+                <h6>Send me an email:</h6>
+                <a href="mailto:shinal94@gmail.com" class="grey_link">hello@hinalshah.com</a>
+              </div>
+              <div class="btm_box">
+                <h6>Or you can find me here.</h6>
+                <ul class="no-bullet contact_social_icons">
+                  <li><a href="https://in.linkedin.com/pub/hinal-shah/56/635/159" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a href="https://www.facebook.com/hinal.shah.739" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                  <li><a href="https://twitter.com/HinalShah7" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://instagram.com/shah_hinal/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://plus.google.com/+HinalShah27" target="_blank"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                  <li><a href="https://in.pinterest.com/shinal94/" target="_blank"><i class="fa fa-pinterest-p"></i> Pinterest</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    <!-- /contact -->
+      </div>
+    </section>
+    <a rel="author" href="https://plus.google.com/u/0/+HinalShah27?rel=author"></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.slick.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(document).foundation();
+        function initialization(){
+          $('#myContainer').fullpage({
+            anchors: ['introduction', 'about', 'work', 'contact', 'lastPage'],
+            resize: false,
+            animateAnchor:false,
+            scrollOverflow: true,
+            autoScrolling:true,
+            responsive: 900,
+            fitSection: false,
+            menu: '#menu',
+            navigation:true,
+            paddingTop: '45px',
+            css3: true
+          });
+        }
+        initialization();
+        var  $elements = $('.job_profile h4');
+         $elements.hide().first().show();
+
+        setInterval(function() {
+           $elements.filter(':visible').fadeOut('slow', function() {
+            $next = $(this).next();
+            if ($next.length === 0) {
+             $next = $elements.first();
+            }
+            $next.fadeIn('slow');
+           });
+        }, 4200);
+        $('.project_section').slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear',
+          nextArrow:'<div class="slick-arrow slick-next"><i class="fa fa-arrow-right"></i></div>',
+          prevArrow:'<div class="slick-arrow slick-prev"><i class="fa fa-arrow-left"></i></div>',
+
+        });
+
+        if(!$("#simple-msg").text().trim().length){
+          $(this).hide();
+        }else{
+          console.log("no");
+        }
+
+      });
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68568510-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
