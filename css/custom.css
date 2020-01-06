@@ -97,7 +97,7 @@ a.grey_link:hover { color: #838383; }
 }*/ }
 .project_section .project:hover .overlay { opacity: 0; }
 .project_section .project:hover .project_title { bottom: 0; }
-.project_section .project img { max-height: 100%; margin: 0 auto; }
+.project_section .project img { max-height: 460px; margin: 0 auto; }
 .project_section .project a { display: block; position: relative; height: 100%; }
 .project_section .project .project_title { position: absolute; bottom: -100%; color: #fff; text-align: center; width: 100%; font-size: 30px; padding: 5px 0; margin-bottom: 0; background: rgba(0, 0, 0, 0.8); transition: all 0.5s ease-in-out; }
 .project_section .project .project_title span { font-size: 16px; }
